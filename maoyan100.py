@@ -1,5 +1,4 @@
 import codecs
-
 import requests
 from pyquery import PyQuery as pq
 from requests.exceptions import RequestException
@@ -34,7 +33,8 @@ def expl_one(html):
         i=i+1
     nextpage=doc(".list-pager li:last-child a").attr('href')
     return result,nextpage
-def get_intro(href):
+
+	def get_intro(href):
     url='https://maoyan.com'+href
     doc=pq(url)
     return doc('.mod-content .dra').text()
