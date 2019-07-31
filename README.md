@@ -1,2 +1,2 @@
-# maoyantop100
-maoyantop100
+# 猫眼top100电影信息抓取
+requests+pyQuery抓取猫眼top100电影，爬取排名，电影名称，主演，上映时间，评分，内容简介等信息，并储存为csv文件
