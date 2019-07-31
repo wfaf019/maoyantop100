@@ -34,7 +34,7 @@ def expl_one(html):
     nextpage=doc(".list-pager li:last-child a").attr('href')
     return result,nextpage
 
-	def get_intro(href):
+def get_intro(href):
     url='https://maoyan.com'+href
     doc=pq(url)
     return doc('.mod-content .dra').text()
